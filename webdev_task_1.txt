@@ -9,6 +9,7 @@ Delta
 <style>
 body {
 background-image:url("Images/Delta-logo.png");
+background-attachment:fixed;
 }
 h1 {
 font-family:impact,charcoal,sans-serif;
