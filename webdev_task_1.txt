@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>
+Delta
+</h1>
+<body>
+
+<style>
+body {
+background-image:url("Images/Delta-logo.png");
+}
+h1 {
+font-family:impact,charcoal,sans-serif;
+font-style:italic;
+font-size:50px;
+border:10px solid lightgreen;
+background-color:lightgreen;
+}
+p.x{
+background-color:lightblue;
+padding:0px 2px 0px 2px;
+display:inline;
+border-style: solid solid solid none;
+}
+div {
+font-family:"Courier New", Courier, monospace;
+
+}
+
+#days, #hrs, #mins, #secs {
+background-color:lightblue;
+font-family:"Courier New", Courier, monospace;
+margin-top:2px;
+float:left;
+}
+#a {
+border:solid;
+}
+#days {
+padding:0px 20px 0px 20px;
+}
+#hrs {
+padding:0px 24px 0px 24px;
+}
+#mins {
+padding:0px 35px 0px 35px;
+}
+#secs {
+padding:0px 30px 0px 30px;
+}
+</style>
+<p>Delta is the coding club of NIT Trichy.
+
+The induction process has started!! The first task is out and the deadline is </p><p style="text-align:center;background-color:yellow">28th May 2016, 23:59:59.</p><p>Kindly follow the deadline and contact your mentors.
+</p>
+<p style="font-size:40px;font-style:oblique;text-decoration:underline">Countdown:</p>
+<div>
+<p id="a" class="x"> Days </p><p id="b" class="x"> Hours </p><p id="c" class="x"> Minutes </p><p id="d" class="x"> Seconds </p>
+</div>
+<p id="days"></p><p id="hrs"></p><p id="mins"></p><p id="secs"></p>
+<script>
+var update = setInterval(updateFun,1000);
+
+function updateFun()
+{
+var date = new Date("May 28, 23:59:59");
+var today = new Date();
+var d = date.getDate() - today.getDate();
+var h = date.getHours() - today.getHours();
+var m = date.getMinutes() - today.getMinutes();
+var s = date.getSeconds() - today.getSeconds();
+if (h <= 0) {
+    d = d-1;
+    h = 23 + h;
+}
+if (m <= 0) {
+    m = 59 + m;
+}
+if (s < 0) {
+    s = 59 + s;
+}
+document.getElementById("days").innerHTML = d;
+document.getElementById("hrs").innerHTML = h;
+document.getElementById("mins").innerHTML = m;
+document.getElementById("secs").innerHTML = s;
+}
+</script>
+
+</body>
+</html>
