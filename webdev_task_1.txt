@@ -52,8 +52,11 @@ padding:0px 30px 0px 30px;
 </style>
 <p>Delta is the coding club of NIT Trichy.
 
-The induction process has started!! The first task is out and the deadline is </p><p style="text-align:center;background-color:yellow">28th May 2016, 23:59:59.</p><p>Kindly follow the deadline and contact your mentors.
+The induction process has started!! The first task is out and the deadline is </p>
+<p style="text-align:center;background-color:yellow">
+28th May 2016, 23:59:59.
 </p>
+<p>Kindly follow the deadline and contact your mentors.</p>
 <p style="font-size:40px;font-style:oblique;text-decoration:underline">Countdown:</p>
 <div>
 <p id="a" class="x"> Days </p><p id="b" class="x"> Hours </p><p id="c" class="x"> Minutes </p><p id="d" class="x"> Seconds </p>
