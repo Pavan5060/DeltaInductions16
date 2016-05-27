@@ -8,7 +8,7 @@ Delta
 
 <style>
 body {
-background-image:url("Images/Delta-logo.png");
+background:url("Images/Delta-logo.png") no-repeat center fixed;
 background-attachment:fixed;
 }
 h1 {
